@@ -8,10 +8,10 @@ def fuzzyfinder(user_input, collection)
     item = collection[i]
     match_data = item.match(/#{pattern}/)
     if match_data
-      position = Regexp.last_match.begin(0)
-      suggestions.push([position, item])
+      last_match = Regexp.last_match
+      suggestions.push([last_match.string.length, last_match.begin(0), item])
     end
   end
-  suggestions.sort!.each { |e| sorted.push(e[1]) }
+  suggestions.sort!.each { |e| sorted.push(e.last) }
   sorted
 end
