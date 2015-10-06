@@ -6,6 +6,33 @@ Fuzzy Finder implemented in Ruby. Matches partial string entries from a list of 
 See Amjith Ramanujam's blog post describing the algorithm: [http://blog.amjith.com/fuzzyfinder-in-10-lines-of-python](http://blog.amjith.com/fuzzyfinder-in-10-lines-of-python)
 
 
+# Installation
+Add this line to your application's Gemfile:
+
+```ruby
+# Add to your Gemfile
+gem 'fuzzyfinder'
+
+# or install manually
+gem install fuzzyfinder
+```
+
+# Usage
+```ruby
+2.2.1 :001 > require 'fuzzyfinder'
+ => true
+
+2.2.1 :002 > Fuzzyfinder.find('user', ['api_user.doc', 'user_doc.doc', 'django_migrations.py', 'migrations.py'])
+ => ["user_doc.doc", "api_user.doc"]
+
+2.2.1 :003 > Fuzzyfinder.find('djm', ['api_user.doc', 'user_doc.doc', 'django_migrations.py', 'migrations.py'])
+ => ["django_migrations.py"]
+ 
+2.2.1 :004 > Fuzzyfinder.find('mig', ['api_user.doc', 'user_doc.doc', 'django_migrations.py', 'migrations.py'])
+ => ["migrations.py", "django_migrations.py"]
+```
+
+
 ## Inspired by
 Amjith Ramanujam's implementation: [https://github.com/amjith/fuzzyfinder](https://github.com/amjith/fuzzyfinder)
 
