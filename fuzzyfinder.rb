@@ -1,5 +1,3 @@
-require 'enumerator'
-
 def fuzzyfinder(user_input, collection)
   temporary_suggestions, suggestions = [], []
   pattern = user_input.split('').join('.*?')
