@@ -6,7 +6,7 @@ Fuzzy Finder implemented in Ruby. Matches partial string entries from a list of 
 See Amjith Ramanujam's blog post describing the algorithm: [http://blog.amjith.com/fuzzyfinder-in-10-lines-of-python](http://blog.amjith.com/fuzzyfinder-in-10-lines-of-python)
 
 
-# Installation
+## Installation
 Add this line to your application's Gemfile:
 
 ```ruby
@@ -17,7 +17,7 @@ gem 'fuzzyfinder'
 gem install fuzzyfinder
 ```
 
-# Usage
+## Usage
 ```ruby
 2.2.1 :001 > require 'fuzzyfinder'
  => true
@@ -32,9 +32,17 @@ gem install fuzzyfinder
  => ["migrations.py", "django_migrations.py"]
 ```
 
+# Contributing
 
-## Inspired by
+1. Fork it ( https://github.com/[my-github-username]/fuzzyfinder/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
+
+# Inspired by
 Amjith Ramanujam's implementation: [https://github.com/amjith/fuzzyfinder](https://github.com/amjith/fuzzyfinder)
+
 
 # License
 See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
