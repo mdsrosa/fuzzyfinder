@@ -1,17 +1,14 @@
 require 'enumerator'
 
 def fuzzyfinder(user_input, collection)
-  suggestions = []
-  sorted = []
-  pattern = user_input.split('').join('.*')
-  collection.each_index do |i|
-    item = collection[i]
-    match_data = item.match(/#{pattern}/)
-    if match_data
-      last_match = Regexp.last_match
-      suggestions.push([last_match.string.length, last_match.begin(0), item])
+  temporary_suggestions, suggestions = [], []
+  pattern = user_input.split('').join('.*?')
+  collection.each do |item|
+    matches = item.scan(/#{pattern}/)
+    if matches.any?
+      temporary_suggestions.push([matches.last.length, Regexp.last_match.begin(0), item])
     end
   end
-  suggestions.sort!.each { |e| sorted.push(e.last) }
-  sorted
+  temporary_suggestions.sort!.each { |e| suggestions.push(e.last) }
+  suggestions
 end
