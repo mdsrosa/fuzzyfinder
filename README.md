@@ -1,4 +1,5 @@
 # fuzzyfinder
+[![Build Status](https://travis-ci.org/mdsrosa/fuzzyfinder.svg?branch=master)](https://travis-ci.org/mdsrosa/fuzzyfinder)
 Fuzzy Finder implemented in Ruby. Matches partial string entries from a list of strings. Works similar to fuzzy finder in SublimeText, Atom and Vim's Ctrl-P plugin.
 
 
@@ -27,7 +28,7 @@ gem install fuzzyfinder
 
 2.2.1 :003 > Fuzzyfinder.find('djm', ['api_user.doc', 'user_doc.doc', 'django_migrations.py', 'migrations.py'])
  => ["django_migrations.py"]
- 
+
 2.2.1 :004 > Fuzzyfinder.find('mig', ['api_user.doc', 'user_doc.doc', 'django_migrations.py', 'migrations.py'])
  => ["migrations.py", "django_migrations.py"]
 ```
