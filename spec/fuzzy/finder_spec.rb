@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe Fuzzyfinder::Fuzzyfinder do
+describe Fuzzy::Finder do
   let(:fuzzyfinder) { described_class }
 
   before :all do

@@ -1,2 +1,2 @@
-require_relative '../lib/fuzzyfinder'
+require_relative '../lib/fuzzy'
 require 'yaml'
