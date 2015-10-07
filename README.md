@@ -21,16 +21,16 @@ gem install fuzzyfinder
 
 ## Usage
 ```ruby
-2.2.1 :001 > require 'fuzzyfinder'
+2.2.1 :001 > require 'fuzzy/finder'
  => true
 
-2.2.1 :002 > Fuzzyfinder::Fuzzyfinder.find('user', ['api_user.doc', 'user_doc.doc', 'django_migrations.py', 'migrations.py'])
+2.2.1 :002 > Fuzzy::Finder.find('user', ['api_user.doc', 'user_doc.doc', 'django_migrations.py', 'migrations.py'])
  => ["user_doc.doc", "api_user.doc"]
 
-2.2.1 :003 > Fuzzyfinder::Fuzzyfinder.find('djm', ['api_user.doc', 'user_doc.doc', 'django_migrations.py', 'migrations.py'])
+2.2.1 :003 > Fuzzy::Finder.find('djm', ['api_user.doc', 'user_doc.doc', 'django_migrations.py', 'migrations.py'])
  => ["django_migrations.py"]
 
-2.2.1 :004 > Fuzzyfinder::Fuzzyfinder.find('mig', ['api_user.doc', 'user_doc.doc', 'django_migrations.py', 'migrations.py'])
+2.2.1 :004 > Fuzzy::Finder.find('mig', ['api_user.doc', 'user_doc.doc', 'django_migrations.py', 'migrations.py'])
  => ["migrations.py", "django_migrations.py"]
 ```
 
