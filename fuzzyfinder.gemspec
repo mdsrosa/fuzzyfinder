@@ -1,12 +1,19 @@
-Gem::Specification.new do |s|
-  s.name          = 'fuzzyfinder'
-  s.version       = '0.0.1'
-  s.date          = '2015-10-06'
-  s.summary       = 'Fuzzy Finder'
-  s.description   = 'Matches partial string entries from a list of strings.'
-  s.authors       = ['Matheus Rosa']
-  s.email         = 'matheusdsrosa@gmail.com'
-  s.files         = ['lib/fuzzyfinder.rb']
-  s.homepage      = 'https://rubygems.org/gems/fuzzyfinder'
-  s.license       = 'mit'
+Gem::Specification.new do |spec|
+  spec.name          = "fuzzyfinder"
+  spec.version       = "0.0.1"
+  spec.date          = "2015-10-06"
+  spec.summary       = "Fuzzy Finder"
+  spec.description   = "Matches partial string entries from a list of strings."
+  spec.authors       = ["Matheus Rosa"]
+  spec.email         = "matheusdsrosa@gmail.com"
+  spec.homepage      = "https://rubygems.org/gems/fuzzyfinder"
+  spec.license       = "MIT"
+  spec.files         = `git ls-files -z`.split("\x0")
+  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.require_paths = ["lib"]
+
+  spec.add_development_dependency "bundler",   "~> 1.7"
+  spec.add_development_dependency "rake",      "~> 10.0"
+  spec.add_development_dependency "rspec",     "~> 3.0.0"
 end

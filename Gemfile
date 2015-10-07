@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.2.1'
 
-gem 'pry'
-gem 'rspec'
+# Specify your gem's dependencies in fuzzyfinder.gemspec
+gemspec
