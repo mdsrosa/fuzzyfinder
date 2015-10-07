@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "fuzzyfinder"
-  spec.version       = "0.0.3"
+  spec.version       = "0.0.4"
   spec.date          = "2015-10-06"
   spec.summary       = "Fuzzy Finder"
   spec.description   = "Matches partial string entries from a list of strings."

@@ -5,3 +5,10 @@ rvm:
   - 1.9.3
   - 2.2.1
 script: bundle exec rspec spec
+deploy:
+  provider: rubygems
+  api_key:
+    secure: 9c36258a39bcafeae4c3e82edfdbd09
+  gem: fuzzyfinder
+  on:
+    repo: mdsrosa/fuzzyfinder
