@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "fuzzyfinder"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.3"
   spec.date          = "2015-10-06"
   spec.summary       = "Fuzzy Finder"
   spec.description   = "Matches partial string entries from a list of strings."
@@ -14,6 +14,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler",   "~> 1.7"
-  spec.add_development_dependency "rake",      "~> 10.0"
-  spec.add_development_dependency "rspec",     "~> 3.0.0"
+  spec.add_development_dependency 'rspec', '~> 3.0', '>= 3.0.0'
 end
