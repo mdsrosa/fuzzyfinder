@@ -45,5 +45,6 @@ gem install fuzzyfinder
 5. Create a new Pull Request
 
 # Inspired by
-Amjith Ramanujam's implementation: [https://github.com/amjith/fuzzyfinder](https://github.com/amjith/fuzzyfinder)
+[https://github.com/amjith/fuzzyfinder](Amjith Ramanujam's implementation)
 
+Thank you Amjith.
