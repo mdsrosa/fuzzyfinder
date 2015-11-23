@@ -1,5 +1,6 @@
 # fuzzyfinder
 [![Build Status](https://travis-ci.org/mdsrosa/fuzzyfinder.svg?branch=master)](https://travis-ci.org/mdsrosa/fuzzyfinder)
+[![Gem](https://img.shields.io/gem/v/fuzzyfinder.svg)]()
 
 Fuzzy Finder implemented in Ruby. Matches partial string entries from a list of strings. Works similar to fuzzy finder in SublimeText, Atom and Vim's Ctrl-P plugin.
 
