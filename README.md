@@ -47,6 +47,3 @@ gem install fuzzyfinder
 # Inspired by
 Amjith Ramanujam's implementation: [https://github.com/amjith/fuzzyfinder](https://github.com/amjith/fuzzyfinder)
 
-
-# License
-See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
